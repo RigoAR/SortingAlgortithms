@@ -7,7 +7,7 @@ public class KPerformance {
     public static void main(String[] args) throws IOException {
         SortingAlgorithm[] algorithms = {
                 new BubbleSort(), new InsertionSort(), new SelectionSort(),
-                new ShellSort(), new QuickSort(), new MergeSort(), new KSort()
+                new ShellSort(), new QuickSort(), new MergeSort(),
         };
 
         int[] sizes = {100, 500, 1000, 2000, 5000, 10000, 20000, 75000, 150000};

@@ -177,23 +177,3 @@ class MergeSort implements SortingAlgorithm {
 
 }
 
-class KSort implements SortingAlgorithm {
-    private final int k = 10;
-
-    public int[] sort(int[] input) {
-        int n = input.length;
-
-        for (int i = 0; i < n; i++) {
-            int temp = input[i];
-            int j = i;
-
-            while (j > 0 && input[j - 1] > temp && j > i - k) {
-                input[j] = input[j - 1];
-                j--;
-            }
-
-            input[j] = temp;
-        }
-        return input;
-    }
-}
